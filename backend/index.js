@@ -13,7 +13,7 @@ connectDB(); // Connect to MongoDB
 const app = express();
 app.use(cors(
   {
-    origin: 'https://jfkvhs.vercel.app', // allow frontend domain
+    origin: 'https://jfkvhs-mbl1g3q3k-adarsh-srs-projects.vercel.app/', // allow frontend domain
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
   }
