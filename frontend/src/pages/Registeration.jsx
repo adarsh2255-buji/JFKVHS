@@ -82,8 +82,7 @@ const Registration = () => {
     formData.append("address[district]", form.address.district);
 
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/student/create`, formData)
-      ;
+      const res = await axios.post('/api/student/create', formData);
       setStatus("Registration successful!");
       setForm(initialState);
       setRegId(res.data.registrationId);
